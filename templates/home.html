@@ -1,0 +1,57 @@
+<html>
+  
+
+    <body style="background-color:rgb(118, 206, 165) ;">
+        <style>
+
+            .container {
+               width: 200px;
+               clear: both;
+               position :relative;
+             }
+             
+             .container input {
+               width: 100%;
+               clear: both;
+               
+             }
+             .topleft {
+               position: absolute;
+               top: 8px;
+               left: 16px;
+               font-size: 18px;
+             }
+             .button { 
+               height: 50px; 
+               width: 100px; 
+              } 
+           </style>
+        <center>
+         <h1 style="background-color: rgba(241, 230, 223, 0.945);"><b>Customers Segmentation</b></h1>
+         <br><br>
+         <img src='static\bgg.png'>
+        </center>
+        
+
+  <div class="topleft"> 
+      <BR>  <BR> <BR> <BR> <BR>       
+        <div class="container">    
+            
+             <form method="POST" action="/predict">
+                 <b>
+                     <br><br><br><br>
+                    <label>Annual Income (k$) :</label>
+                    <input type="text" name="Annual Income (k$)" placeholder="Enter Annual Income"><br><br />
+                    <label>Spending Score (1-100) :</label>
+                    <input type="text" name="Spending Score (1-100)" placeholder="Enter Spending Score"><br><br />
+                    
+                 </b>
+
+                 <input type="submit" , value='PREDICT' style="background-color:rgba(238, 199, 174, 0.945);">
+
+             </form>
+    
+            </div>  
+        </div> 
+    </body>
+</html>
